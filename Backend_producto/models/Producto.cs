@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_producto.models
@@ -26,6 +22,8 @@ namespace Backend_producto.models
         public int cantidad { get; set; }
 
         [Required]
-        public int catedoriaId { get; set; }
+        public int categoriaId { get; set; }
+
+        public Categoria? Categoria { get; set; }
     }
 }
